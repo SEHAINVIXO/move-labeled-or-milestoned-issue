@@ -1,0 +1,24 @@
+name: MoveMilestonedIssueToOperations
+
+on:
+  issues:
+    types: [milestoned]
+    
+env:
+  MY_GITHUB_TOKEN: ${{ secrets.SEHA_TOKEN }}
+
+jobs:
+  # uses: https://github.com/SEHAINVIXO/move-labeled-or-milestoned-issue
+  add-to-project:
+    name: Add issue to operation project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: SEHAINVIXO/move-labeled-or-milestoned-issue@master
+        with:
+          # You can target a project in a different organization
+          # to the issue
+          action-token: ${{ secrets.SEHA_TOKEN }}
+          project-url: https://github.com/users/SEHAINVIXO/projects/2
+          column-name: "New"
+          milestone-name: "operations"
+          columns-to-ignore: "Done"
