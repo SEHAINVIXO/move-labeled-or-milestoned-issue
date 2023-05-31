@@ -5,7 +5,7 @@ on:
     types: [milestoned]
     
 env:
-  MY_GITHUB_TOKEN: ${{ secrets.SEHA_Token }}
+  MY_GITHUB_TOKEN: ${{ secrets.SEHA_TOKEN }}
 
 jobs:
   # uses: https://github.com/SEHAINVIXO/move-labeled-or-milestoned-issue
@@ -17,7 +17,7 @@ jobs:
         with:
           # You can target a project in a different organization
           # to the issue
-          action-token: ${{ secrets.SEHA_Token }}
+          action-token: ${{ secrets.SEHA_TOKEN }}
           project-url: https://github.com/users/SEHAINVIXO/projects/2
           column-name: "New"
           milestone-name: "operations"
