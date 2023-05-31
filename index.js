@@ -194,8 +194,8 @@ async function getOrgInformation(organizationLogin, projectNumber, token){
                     }
                 }
             }`,{
-            loginVariable: organizationLogin,
-            projectVariable: projectNumber,
+            loginVariable: "INVIXO",
+            projectVariable: 8,
             headers: {
                 authorization: `bearer ${token}`
             }
