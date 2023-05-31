@@ -242,9 +242,9 @@ async function getRepoInformation(repositoryOwner, repositoryName, projectNumber
                     }
                 }        
             }`, {
-            ownerVariable: repositoryOwner,
-            nameVariable: repositoryName,
-            projectVariable: projectNumber,
+            ownerVariable: "SEHAINVIXO",
+            nameVariable: "move-labeled-or-milestoned-issue",
+            projectVariable: 2,
             headers: {
                 authorization: `bearer ${token}`
             }
