@@ -16,7 +16,7 @@ jobs:
           issue_number=${{ github.event.issue.number }}
           from_project_id="1"
           to_project_id="2"
-          token="${{ secrets.GITHUB_TOKEN }}"
+          token="${{ secrets.SEHA-PAT }}"
           
           # Get the updated issue data
           issue=$(curl -s -H "Authorization: Bearer $token" -H "Accept: application/vnd.github.v3+json" \
