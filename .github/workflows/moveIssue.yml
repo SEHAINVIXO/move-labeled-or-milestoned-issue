@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Move Issue
-        if: ${{ github.event.issue.milestone.title == 'TARGET_MILESTONE_TITLE' }}
+        if: ${{ github.event.issue.milestone.title == 'operations' }}
         run: |
           issue_number=${{ github.event.issue.number }}
           from_project_id="1"
