@@ -1,0 +1,3 @@
+name: move next release to current release
+
+on: workflow_dispatch
